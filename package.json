@@ -1,0 +1,14 @@
+{
+  "name": "acp-claude-agent",
+  "private": true,
+  "workspaces": [
+    "packages/acp",
+    "packages/claude-agent",
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=app",
+    "build": "npm run build --workspace=packages/acp && npm run build --workspace=packages/claude-agent && npm run build --workspace=app",
+    "start": "npm run start --workspace=app"
+  }
+}
